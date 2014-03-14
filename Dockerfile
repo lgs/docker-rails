@@ -8,7 +8,5 @@ FROM lgsd/docker-ruby-2.1.1p76
 
 MAINTAINER Luca G. Soave <luca.soave@gmail.com>
 
-RUN apt-get -qq update 
-
 # Install Rails stable
-RUN gem install rails --no-rdoc --no-ri
+RUN  gem update --system && gem install rails --no-rdoc --no-ri
