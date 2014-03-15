@@ -1,9 +1,8 @@
 docker-rails
 ============
 
-Dockerfile for Rails 4.0.4, with Ruby 2.1.1 on Debian jessie.
-
-This is a base image to develop rails apps in a contrainer. Based on 
+Dockerfile for Rails 4.0.4, with Ruby 2.1.1 on Debian jessie.  
+This is a base image to develop rails apps in a contrainer. 
 
 ## Use
 
