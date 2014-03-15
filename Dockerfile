@@ -14,9 +14,9 @@ FROM lgsd/docker-ruby-2.1.1p76
 
 MAINTAINER Luca G. Soave <luca.soave@gmail.com>
 
-RUN apt-get update && \
-    apt-get install -qqy sqlite3 && \ 
-    libsqlite3-dev && \
+RUN apt-get update && apt-get install -qqy \
+    sqlite3 \ 
+    libsqlite3-dev \
     nodejs
 
 # Change REFRESHED_AT date, 
