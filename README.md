@@ -1,7 +1,7 @@
 docker-rails
 ============
 
-Dockerfile for Rails 4.0.4, with Ruby 2.1.1 on Debian jessie.  
+Dockerfile for Rails 4.1.5, with Ruby 2.1.2 on Debian wheezy.  
 This is a base image to develop rails apps in a contrainer. 
 
 ## Use
@@ -26,11 +26,11 @@ This is a base image to develop rails apps in a contrainer.
 
       root@eff2f1d244a8:/test-app# rails s
       => Booting WEBrick
-      => Rails 4.0.4 application starting in development on http://0.0.0.0:3000
+      => Rails 4.1.5 application starting in development on http://0.0.0.0:3000
       => Run `rails server -h` for more startup options
       => Ctrl-C to shutdown server
       [2014-03-15 11:45:04] INFO  WEBrick 1.3.1
-      [2014-03-15 11:45:04] INFO  ruby 2.1.1 (2014-02-24) [x86_64-linux]
+      [2014-03-15 11:45:04] INFO  ruby 2.1.2 (2014-05-08) [x86_64-linux]
       [2014-03-15 11:45:04] INFO  WEBrick::HTTPServer#start: pid=136 port=3000
 
 reach http://localhost:3000 and see it works. Or try using curl:
