@@ -1,16 +1,16 @@
 ##############################################
-# Rails 4.0.4 Dockerfile
+# Rails 4.1.5 Dockerfile
 #
 # https://github.com/lgsd/docker-rails
 #
-# VERSION 1.0
+# VERSION 1.1
 # 
-# Pull base image based on Ruby 2.1.1p76 
-# 2014-02-24 revision 45161 [x86_64-linux]
-# Debian jessie (see lgsd/docker-ruby-2.1.1p76)
+# Pull base image based on Ruby 2.1.2p95 
+# 2014-05-08 revision 45877 [x86_64-linux]
+# Debian wheezy (see lgsd/docker-ruby-2.1.2p95)
 ###############################################
 
-FROM lgsd/docker-ruby-2.1.1p76
+FROM lgsd/docker-ruby-2.1.2p95
 
 MAINTAINER Luca G. Soave <luca.soave@gmail.com>
 
@@ -23,8 +23,8 @@ RUN apt-get update && apt-get install -qqy \
 # to force Rails gem update
 # on local image 
 #
-ENV REFRESHED_AT 2014-15-03
+ENV REFRESHED_AT 2014-27-08
 
-# Install Rails stable (Rails 4.0.4 on 2014-15-03)
+# Install Rails stable (Rails 4.1.5 on 2014-27-08)
 #
 RUN  gem update --system && gem install rails --no-rdoc --no-ri
