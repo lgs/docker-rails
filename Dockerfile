@@ -14,11 +14,12 @@ FROM lgsd/docker-ruby-2.1.2p95
 
 MAINTAINER Luca G. Soave <luca.soave@gmail.com>
 
-RUN apt-get update && apt-get install -qqy \
+RUN add-apt-repository ppa:chris-lea/node.js \
+    apt-get update && apt-get install -qqy \
     sqlite3 \ 
     libsqlite3-dev \
     nodejs
-
+    
 # Change REFRESHED_AT date, 
 # to force Rails gem update
 # on local image 
