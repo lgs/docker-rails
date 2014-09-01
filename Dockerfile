@@ -15,15 +15,14 @@ FROM lgsd/docker-ruby-2.1.2p95
 MAINTAINER Luca G. Soave <luca.soave@gmail.com>
 
 RUN apt-get update && apt-get install -qqy \
-    sqlite3 \ 
-    libsqlite3-dev 
+    sqlite3 libsqlite3-dev node
     
 # Change REFRESHED_AT date, 
 # to force Rails gem update
 # on local image 
 #
-ENV REFRESHED_AT 2014-27-08
+ENV REFRESHED_AT 2014-01-09
 
-# Install Rails stable (Rails 4.1.5 on 2014-27-08)
+# Install Rails stable (Rails 4.1.5 on 2014-01-09)
 #
 RUN  gem update --system && gem install rails --no-rdoc --no-ri
